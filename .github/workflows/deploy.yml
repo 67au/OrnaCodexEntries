@@ -1,0 +1,30 @@
+name: Deploy from Cache
+
+on:
+  workflow_dispatch:
+
+permissions: 
+  actions: read
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Download Codex from Artifact
+        uses: dawidd6/action-download-artifact@v6
+        with:
+          name: codex
+          path: './template'
+          branch: main
+          workflow: crawl.yml
+          github_token: ${{ secrets.GH_PAT }}
+          repo: 67au/OrnaCodexCrawler
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CF_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          command: pages deploy ./template --project-name=${{ vars.CF_PAGES_NAME }}

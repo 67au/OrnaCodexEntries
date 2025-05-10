@@ -1,4 +1,4 @@
-name: Deploy from Cache
+name: Deploy YACO API
 
 on:
   workflow_dispatch:
@@ -17,7 +17,7 @@ jobs:
         uses: dawidd6/action-download-artifact@v6
         with:
           name: codex
-          path: './template'
+          path: './template/api'
           branch: main
           workflow: crawl.yml
           github_token: ${{ secrets.GH_PAT }}
@@ -27,4 +27,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          command: pages deploy ./template --project-name=${{ vars.CF_PAGES_NAME }}
+          command: pages deploy ./template/api --project-name=${{ vars.CF_PAGES_NAME }}

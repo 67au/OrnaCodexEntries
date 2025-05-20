@@ -1,0 +1,130 @@
+{
+    "title": "Codex YACO",
+    "meta": {
+        "category": "Catégorie",
+        "events": "Événements",
+        "item_type": "Type d’objet",
+        "element": "Élément",
+        "tags": "Étiquettes",
+        "stats": "Statistiques",
+        "ability": "Compétence arme",
+        "spell_type": "Compétence/sort",
+        "used_by": "Utilisable par",
+        "sources": "Sources",
+        "off-hands": "2ème main"
+    },
+    "stats": {
+        "element": "Élément"
+    },
+    "exotic": {
+        "true": "Oui",
+        "false": "Non"
+    },
+    "tools": {
+        "filters": "Filtres",
+        "sort": "Trier",
+        "search": "Rechercher",
+        "assess": "Évaluer",
+        "primarySort": "Compétence principal",
+        "update": "Mise à jours",
+        "proof": "Certificat de guilde",
+        "tower": "Tours de l’Olympe",
+        "compare": "Comparer",
+        "settings": "Paramètres"
+    },
+    "update": {
+        "title": "Mise à jours disponible !",
+        "version": "Mise à jours en cours...",
+        "refresh": "Rafraîchir la page",
+        "dismiss": "Fermer",
+        "reset": "Reset Database"
+    },
+    "sort": {
+        "primary": {
+            "default": "Défaut",
+            "name": "Nom",
+            "tier": "Tier"
+        }
+    },
+    "units": {
+        "mana": "Mana",
+        "level": "Niveau"
+    },
+    "assess": {
+        "level": "Niveau",
+        "base": "De base",
+        "assess": "Évaluer",
+        "qualityCalc": "Calcul de la qualité",
+        "help": "Veuillez entrer un BossScaling et une qualité valides",
+        "query": "Requête",
+        "setQualityCode": "Définir la qualité",
+        "quality": {
+            "title": "Qualité",
+            "default": "Défaut",
+            "broken": "Misérable",
+            "poor": "Médiocre",
+            "regular": "Ordinaire",
+            "superior": "Remarquable",
+            "famed": "Rare",
+            "legendary": "Légendaire",
+            "ornate": "Ornate",
+            "masterforged": "Masterforgé",
+            "demonforged": "Demonforgé",
+            "godforged": "Divineforgé"
+        },
+        "bossScaling": {
+            "title": "BossFlag",
+            "unset": "Non défini",
+            "yes": "Oui",
+            "no": "Non",
+            "name": {
+                "unset": "Non Défini",
+                "yes": "BossScaling",
+                "no": "Non-BossScaling"
+            }
+        }
+    },
+    "proof": {
+        "count": "Nombre"
+    },
+    "tower": {
+        "floors": "Étages",
+        "localTime": "Heure locale"
+    },
+    "compare": {
+        "quality": {
+            "default": "NORMAL",
+            "masterforged": "MF",
+            "demonforged": "DF",
+            "godforged": "GF"
+        },
+        "add": "Ajouté",
+        "full": "Limite Max atteinte !"
+    },
+    "help": {
+        "notFound": "Non trouvé !"
+    },
+    "settings": {
+        "general": {
+            "title": "Géneral",
+            "displayStats": "Afficher les statistiques à l’entrée",
+            "displayStatsSubtitle": "Activez pour voir les statistiques de l'entrée directement"
+        },
+        "theme": {
+            "title": "Thème",
+            "currentTheme": "Thème actuel",
+            "choice": "Choisir un thème"
+        },
+        "credit": {
+            "title": "Crédits",
+            "website": "Site officiel"
+        },
+        "about": {
+            "title": "A propos",
+            "author": "Auteur",
+            "lincense": "Licence",
+            "appVersion": "App Version",
+            "apiUpdatedAt": "Dernière mise à jours des données"
+        }
+    }
+}

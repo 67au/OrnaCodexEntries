@@ -30,7 +30,7 @@ jobs:
           python-version: 3.13
       - run: uv sync --directory ./crawler
       - name: Export Extra
-        run: uv run --directory ./crawler main.py export_extra --extra ../extra/data --export ../template/extra
+        run: uv run --directory ./crawler main.py export_extra --input ../extra/data --output ../template/extra
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:

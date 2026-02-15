@@ -7,16 +7,6 @@
 https://yaco-api.fqegg.top
 ```
 
-## Files
-
 ```
-/
-├─ index.html
-├─ _headers
-├─ index.json
-├─ codex.json
-└─ i18n/
-   ├─ en.json
-   ├─ zh-hans.json
-   └─ zh-hant.json
+https://yaco-extra.fqegg.top
 ```
